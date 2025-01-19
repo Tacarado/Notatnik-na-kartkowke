@@ -1,0 +1,30 @@
+﻿<Window x:Class="note.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:note"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <ToolBar>
+            <Menu>
+                <MenuItem Header="Plik">
+                    <MenuItem Header="Otwórz" Click="MenuItem_Click_Otworz"/>
+                    <MenuItem Header="zapisz" Click="MenuItem_Click_Zapisz"/>
+                    <MenuItem Header="Zapisz Jako" Click="MenuItem_Click_Zapisz_Jako"/>
+                    <MenuItem Header="Zmień Kolor Czcionki">
+                        <MenuItem Header="czerwony" Click="MenuItem_Click_Zmien_Kolor"/>
+                        <MenuItem Header="niebieski" Click="MenuItem_Click_Zmien_Kolor"/>
+                        <MenuItem Header="Żółty" Click="MenuItem_Click_Zmien_Kolor"/>
+                        <MenuItem Header="domyślny" Click="MenuItem_Click_Zmien_Kolor"/>
+                    </MenuItem>
+                </MenuItem>
+                
+            </Menu>
+        </ToolBar>
+        <TextBox x:Name="doWpisania"></TextBox>
+        <Label Content ="{Binding ElementName=doWpisania, Path=Text}" ></Label>
+
+    </StackPanel>
+</Window>
