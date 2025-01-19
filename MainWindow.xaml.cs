@@ -79,5 +79,23 @@ namespace note
                     doWpisania.Foreground= Brushes.Black; break;
             }
         }
+
+        private void MenuItem_Click_Zmien_Tlo(object sender, RoutedEventArgs e)
+        {
+            MenuItem menuItem = sender as MenuItem;
+            string kolor = menuItem.Header.ToString();
+
+            switch (kolor)
+            {
+                case "czerwony":
+                    doWpisania.Background = Brushes.Red; break;
+                case "niebieski":
+                    doWpisania.Background = Brushes.Blue; break;
+                case "żółty":
+                    doWpisania.Background = Brushes.Yellow; break;
+                default:
+                    doWpisania.Background = Brushes.Black; break;
+            }
+        }
     }
 }

@@ -19,6 +19,12 @@
                         <MenuItem Header="Żółty" Click="MenuItem_Click_Zmien_Kolor"/>
                         <MenuItem Header="domyślny" Click="MenuItem_Click_Zmien_Kolor"/>
                     </MenuItem>
+                    <MenuItem Header="Zmień Kolor Tła">
+                        <MenuItem Header="czerwony" Click="MenuItem_Click_Zmien_Tlo"/>
+                        <MenuItem Header="niebieski" Click="MenuItem_Click_Zmien_Tlo"/>
+                        <MenuItem Header="Żółty" Click="MenuItem_Click_Zmien_Tlo"/>
+                        <MenuItem Header="domyślny" Click="MenuItem_Click_Zmien_Tlo"/>
+                    </MenuItem>
                 </MenuItem>
                 
             </Menu>
